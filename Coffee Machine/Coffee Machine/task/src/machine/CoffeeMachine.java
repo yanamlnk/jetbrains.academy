@@ -1,8 +1,8 @@
 package machine;
 
-import java.util.Scanner;
+// create 2 files with 2 classes. 1st will take input, second, here, will have different methods to execute.
 
-public class CoffeeMachine {
+/* public class CoffeeMachine {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -164,7 +164,7 @@ public class CoffeeMachine {
             }
         }
     }
-}
+} */
 
         // program to count whether the desirable number of cups is possible:
 
@@ -219,12 +219,4 @@ public class CoffeeMachine {
                          water + " ml of water\n" + milk + " ml of milk\n" +
                          coffee + " g of coffee beans"); */
 
-        // program that prints out the process of making a cup of coffee:
 
-        /* System.out.println("Starting to make a coffee");
-        System.out.println("Grinding coffee beans");
-        System.out.println("Boiling water");
-        System.out.println("Mixing boiled water with crushed coffee beans");
-        System.out.println("Pouring coffee into the cup");
-        System.out.println("Pouring some milk into the cup");
-        System.out.println("Coffee is ready!"); */
