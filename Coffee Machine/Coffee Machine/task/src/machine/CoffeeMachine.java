@@ -1,7 +1,44 @@
 package machine;
 
-// create 2 files with 2 classes. 1st will take input, second, here, will have different methods to execute.
 
+public class CoffeeMachine {
+    public static void main(String[] args) {
+
+        MachineCore core = new MachineCore();
+
+        String coffee;
+        boolean machine = true;
+
+        while (machine) {
+            System.out.println("Write action (buy, fill, take, remaining, exit):");
+
+            switch (core.inputer()) {
+                case "buy":
+                    core.buy();
+                    break;
+                case "fill":
+                    core.fill();
+                    break;
+
+                case "take":
+                    core.take();
+                    break;
+
+                case "remaining":
+                    core.remaining();
+                    break;
+
+                case "exit":
+                    machine = false;
+                    break;
+
+                default:
+                    System.out.println("Please write down correct input");
+                    break;
+            }
+        }
+    }
+}
 /* public class CoffeeMachine {
     public static void main(String[] args) {
 

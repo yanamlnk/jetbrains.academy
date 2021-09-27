@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class MachineCore {
 
-    enum States {
-        STANDBY, BUY, BUY_DETAILS, FILL, FILL_DETAILS
-    }
 
     int money = 550;
     int water = 400;
@@ -24,7 +21,6 @@ public class MachineCore {
         System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
         String type = inputer();
         if (type.equals("back")) {
-//            return States.STANDBY;
         } else if (type.equals("1")) {
             cups--;
             water -= 250;
@@ -88,7 +84,7 @@ public class MachineCore {
                 money -= 7;
                 milk += 75;
             }
-        } else if (inputer().equals("3")) {
+        } else if (type.equals("3")) {
             cups--;
             water -= 200;
             milk -= 100;
@@ -126,7 +122,6 @@ public class MachineCore {
                 milk += 100;
             }
         }
-//        return States.STANDBY;
     }
 
     public void fill(){

@@ -1,9 +1,7 @@
-package machine;
-
 
 // create 2 files with 2 classes. 1st will take input, second, here, will have different methods to execute.
 
-public class CoffeeMachine_old{
+/* public class CoffeeMachine_old{
     public static void main(String[] args) {
 
         MachineCore core = new MachineCore();
